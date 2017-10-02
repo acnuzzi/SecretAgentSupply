@@ -21,6 +21,8 @@ header {
 
 img.logo {
   height: 1.5rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
 }
 
 #main_cont {
