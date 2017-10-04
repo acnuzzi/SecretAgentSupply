@@ -78,6 +78,18 @@ img.logo {
   text-decoration: none;
 }
 
+#nav_menu {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav_menu_bar a {
+  color: white;
+  text-decoration: none;
+}
+
 #pic_cont_section {
   padding-top: 3rem;
   height: 15rem;
@@ -110,12 +122,19 @@ img.logo {
   padding: 2rem 0rem;
 }
 
+.image_glasses img {
+  height: 5rem;
+  width: 9rem;
+  padding: 4rem 0rem;
+}
+
 .img_footer {
   display: flex;
   justify-content: center;
   height: 2rem;
   color: white;
   align-items: center;
+  background-color: black;
 }
 
 section.info_cont_main {
@@ -150,8 +169,99 @@ footer {
 
 #footer {
   display: flex;
-  height: 5rem;
   align-items: center;
   text-align: left;
   color:white;
+  height: 5rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #nav_menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .nav_menu_bar a {
+      color: white;
+      text-decoration: none;
+    }
+
+  #nav_cont {
+    display: none;
+  }
+
+  .pic_cont_all {
+    width: 45%;
+  }
+
+  .pic_cont_all.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .pic_cont_all.pen {
+   margin: -1.5rem auto;
+  }
+
+  .pic_cont_all {
+    width: 90%;
+    align-items: center;
+  }
+
+  .pic_cont_all.watch {
+    display: none;
+  }
+
+  .pic_cont_all.pen {
+    display: flex;
+    align-items: center;
+  }
+
+  #info_cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_cont_loc {
+    align-items: center;
+    width: 90%;
+    margin: -1.5rem auto;
+    text-align: center;
+  }
+
+  .moto_cont {
+    overflow: hidden;
+  }
+
+  #block_cont {
+    display: flex;
+    flex-direction: column;
+    top: 13.5rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    overflow: hidden;
+  }
+
+  #block_cont h4 {
+    font-size: .77rem;
+    padding-bottom: 0.25rem;
+  }
+
+  #block_cont h2 {
+    font-size: 1rem;
+  }
+
+  #moto_cont {
+    background-image: url("../images/moto.jpg");
+    height: 15rem;
+  }
+
+ #footer h6 {
+    margin: auto;
+    }
 }
